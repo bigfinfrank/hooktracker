@@ -17,10 +17,10 @@
   "license": "UNLICENSED",
   "description": "A",
   "dependencies": {
-    "electron": "^33.0.2",
     "node-global-key-listener": "^0.3.0"
   },
   "devDependencies": {
+    "electron": "^33.0.2",
     "electron-builder": "^25.1.8"
   }
 }
