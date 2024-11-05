@@ -22,7 +22,10 @@ jobs:
         run: npm install
 
       - name: Package the app with Electron Builder
-        run: npm run build
+        run: npx electron-builder --win --x64
+
+      - name: debug
+        run: ls dist
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
