@@ -21,12 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Package app with Electron Packager
-        run: |
-          npx electron-packager . hookTracker --platform=win32 --arch=x64 --out=build
+      - name: Package the app with Electron Builder
+        run: npm run build
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: electron-app
-          path: build/
+          path: dist/*.exe
