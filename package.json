@@ -11,7 +11,8 @@
     "productName": "hookTracker",
     "win": {
       "target": "portable"
-    }
+    },
+    "publish": null
   },
   "author": "",
   "license": "UNLICENSED",
