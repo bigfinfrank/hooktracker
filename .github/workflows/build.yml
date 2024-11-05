@@ -23,7 +23,7 @@ jobs:
 
       - name: Package app with Electron Packager
         run: |
-          npx electron-packager . hookTracker --platform=windows --arch=x64 --out=build
+          npx electron-packager . hookTracker --platform=win32 --arch=x64 --out=build
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
